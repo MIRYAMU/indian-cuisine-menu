@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indian Cuisine - Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Georgia&display=swap" rel="stylesheet" />
+  <style>
+    @page {
+      size: 8.5in 14in;
+      margin: 0;
+    }
+    html, body {
+      width: 8.5in;
+      height: 14in;
+      font-family: 'Georgia', serif;
+      margin: 0 auto;
+      padding: 0;
+      background: #fff8f0;
+    }
+    header {
+      background: #8b0000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+    }
+    .menu-section {
+      margin: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .menu-section h3 {
+      margin: 0;
+      padding: 15px;
+      background: #f4e1d2;
+      font-size: 1.4em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+    .menu-items-container {
+      display: none;
+      padding: 15px;
+    }
+    .menu-item {
+      margin-bottom: 12px;
+      border-bottom: 1px dashed #ccc;
+      padding-bottom: 8px;
+    }
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+    .item-name {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    .item-description {
+      margin: 5px 0;
+      color: #555;
+    }
+    .item-price {
+      color: #8b0000;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>INDIAN CUISINE</h1>
+    <p style="margin: 0; font-size: 1.1em; font-family: 'Georgia', serif;">Authentic Indian Flavors - RJY</p>
+  </header>
+
+  <section class="menu-section">
+    <h3>Appetizers 🍴</h3>
+    <div class="menu-items-container">
+      <div class="menu-item">
+        <div class="item-name">Samosa</div>
+        <div class="item-description">Crispy pastry filled with spiced potatoes and peas</div>
+        <div class="item-price">₹60</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">Paneer Tikka</div>
+        <div class="item-description">Grilled cottage cheese cubes marinated in Indian spices</div>
+        <div class="item-price">₹180</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">Onion Pakora</div>
+        <div class="item-description">Crispy onion fritters served with mint chutney</div>
+        <div class="item-price">₹100</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">Chicken 65</div>
+        <div class="item-description">Spicy, deep-fried chicken bites</div>
+        <div class="item-price">₹200</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h3>Soups & Salads 🥣</h3>
+    <div class="menu-items-container">
+      <div class="menu-item">
+        <div class="item-name">Tomato Shorba</div>
+        <div class="item-description">Spiced tomato soup with Indian herbs</div>
+        <div class="item-price">₹90</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">Green Salad</div>
+        <div class="item-description">Fresh lettuce, cucumber, tomatoes with lemon dressing</div>
+        <div class="item-price">₹70</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">Hot & Sour Soup</div>
+        <div class="item-description">Tangy and spicy soup with vegetables</div>
+        <div class="item-price">₹100</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">Chicken Hot Soup</div>
+        <div class="item-description">Hot and spicy chicken broth with herbs</div>
+        <div class="item-price">₹120</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h3>Main Courses 🍛</h3>
+    <div class="menu-items-container">
+      <div class="menu-item">
+        <div class="item-name">Butter Chicken</div>
+        <div class="item-description">Tender chicken in creamy tomato gravy</div>
+        <div class="item-price">₹240</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">Chana Masala</div>
+        <div class="item-description">Spicy chickpeas cooked in onion-tomato gravy</div>
+        <div class="item-price">₹160</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">Paneer Butter Masala</div>
+        <div class="item-description">Paneer cubes cooked in a buttery tomato sauce</div>
+        <div class="item-price">₹220</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">Mutton Rogan Josh</div>
+        <div class="item-description">Aromatic mutton curry from Kashmir</div>
+        <div class="item-price">₹300</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">Chicken Biryani</div>
+        <div class="item-description">Aromatic basmati rice cooked with spiced chicken</div>
+        <div class="item-price">₹220</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h3>Breads 🫓</h3>
+    <div class="menu-items-container">
+      <div class="menu-item">
+        <div class="item-name">Butter Naan</div>
+        <div class="item-description">Soft leavened bread brushed with butter</div>
+        <div class="item-price">₹40</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">Tandoori Roti</div>
+        <div class="item-description">Whole wheat bread cooked in tandoor</div>
+        <div class="item-price">₹25</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">Garlic Naan</div>
+        <div class="item-description">Naan topped with garlic and coriander</div>
+        <div class="item-price">₹50</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h3>Desserts 🍨</h3>
+    <div class="menu-items-container">
+      <div class="menu-item">
+        <div class="item-name">Gulab Jamun</div>
+        <div class="item-description">Milk-solid balls soaked in rose flavored syrup</div>
+        <div class="item-price">₹80</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">Rasmalai</div>
+        <div class="item-description">Soft cheese patties in saffron flavored milk</div>
+        <div class="item-price">₹100</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">Ice Cream</div>
+        <div class="item-description">Vanilla, chocolate, or strawberry scoop</div>
+        <div class="item-price">₹70</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">Kheer</div>
+        <div class="item-description">Traditional rice pudding flavored with cardamom and garnished with nuts</div>
+        <div class="item-price">₹90</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Rajahmundry, Andhra Pradesh | Phone: 9876543280
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.menu-section h3').forEach(header => {
+        header.addEventListener('click', () => {
+          const container = header.nextElementSibling;
+          container.style.display = container.style.display === 'block' ? 'none' : 'block';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
